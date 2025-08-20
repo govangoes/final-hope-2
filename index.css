@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* hide cursor when custom squid active on fine pointers */
+@media (pointer: fine) {
+  body.squid-cursor { cursor: none; }
+}
+
+/* reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* bioluminescent glow helper */
+.glow {
+  box-shadow: 0 0 16px 2px rgba(126,249,255,.4), 0 0 40px 6px rgba(255,110,199,.2);
+  text-shadow: 0 0 10px rgba(126,249,255,.6);
+}
+
+/* deep ocean gradient */
+.bg-deep {
+  background-image: theme('backgroundImage.deep-gradient');
+  background-attachment: fixed;
+  background-size: cover;
+}

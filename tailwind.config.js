@@ -1,73 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  content: ['./index.html','./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
-      "core": {
-            "gvgGold": "#F4C24E",
-            "deepGold": "#B57F1B",
-            "jadeCore": "#2EAD5F",
-            "darkJade": "#0B5D3B",
-            "haloMint": "#C9F7C5",
-            "richBlack": "#0B0B0E",
-            "graphite": "#1F1F23",
-            "paperWhite": "#F7F7FB"
+        abyss: '#0a0f1f',
+        trench: '#020617',
+        glow: '#7ef9ff',
+        coral: '#ff6ec7',
+        kelp: '#1dd3b0',
       },
-      "accents": {
-            "royalPurple": "#6C2BD9",
-            "neonMagenta": "#E039F5",
-            "electricBlue": "#00C2FF",
-            "sunflowerYellow": "#FFC300",
-            "coralPink": "#FF6DAE",
-            "warmOrange": "#FF8A00"
-      },
-      "calamariCrystal": {
-            "squidViolet": "#7D3AC1",
-            "tentaclePlum": "#542A91",
-            "deepSeaBlue": "#0B5D8C",
-            "abyssNavy": "#062A3F",
-            "crystalCyan": "#5FE1FF",
-            "crystalMagenta": "#FF6AD5",
-            "opalGlow": "#C8A9FF",
-            "starshineWhite": "#F9F9FF"
-      },
-      "gradients": {
-            "goldToBrass": [
-                  "#F8D563",
-                  "#B98100"
-            ],
-            "jadeToDeepJade": [
-                  "#289A3C",
-                  "#0B5D3B"
-            ],
-            "crystalBloom": [
-                  "#5FE1FF",
-                  "#FF6AD5",
-                  "#C8A9FF"
-            ]
-      }
-},
       boxShadow: {
-        glow: '0 0 40px rgba(238,62,150,0.35), 0 0 80px rgba(0,246,255,0.15)'
+        glow: '0 0 20px 2px rgba(126,249,255,0.35), 0 0 40px 8px rgba(255,110,199,0.15)'
       },
-      keyframes: {
-        floaty: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-6px)' }
-        },
-        drift: {
-          '0%': { transform: 'translate(0,0)' },
-          '50%': { transform: 'translate(8px,-6px)' },
-          '100%': { transform: 'translate(0,0)' }
-        }
-      },
-      animation: {
-        floaty: 'floaty 6s ease-in-out infinite',
-        drift: 'drift 10s ease-in-out infinite'
+      backgroundImage: {
+        'deep-gradient':
+          'radial-gradient(1000px 600px at 10% -10%, rgba(20,40,120,0.35), transparent), radial-gradient(800px 500px at 90% 10%, rgba(0,180,160,0.25), transparent), linear-gradient(180deg, #020617 0%, #0a0f1f 60%, #000510 100%)'
       }
-    },
+    }
   },
   plugins: [],
 }

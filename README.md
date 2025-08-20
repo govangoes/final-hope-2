@@ -1,11 +1,14 @@
-# Final Hope — GoVanGoes (Calamari Crystal)
-Vite + React + Tailwind site with underwater aesthetic, floating squid cursor, scroll reveals, and Coral Glow dark mode.
+# Final Hope 2 — Deep Sea Theme
 
-## Scripts
-- `npm i`
-- `npm run dev` — start locally
-- `npm run build` — production build
-- `npm run preview` — preview production
+## Run locally
+1. Open Terminal
+2. `cd ~/Downloads/"final-hope 2"` (or wherever you placed this folder)
+3. `npm install`
+4. `npm run dev` and open the Local URL
 
-## Deploy
-Push to GitHub (main or dev). Connect repo to Vercel (Framework: Vite). Build command: `npm run build`. Output: `dist`.
+## Build
+`npm run build` (outputs to `dist/`)
+
+## Deploy on Vercel
+- Connect the GitHub repo; Vercel should auto-detect Vite.
+- Or set Build Command: `npm run build`, Output Directory: `dist`.
